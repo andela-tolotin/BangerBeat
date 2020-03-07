@@ -1,5 +1,21 @@
+:root {
+  --banger-yellow: #f9c502;
+  --banger-black: #0b0b0b;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
+  width: 100%;
 }
 
 .App-logo {
@@ -14,13 +30,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000;
   min-height: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
   color: white;
   list-style: none;
 }
@@ -50,20 +66,41 @@
   align-items: center;
 }
 
+.companyBrand h3 {
+  font-size: 18px;
+}
+
 .App-link {
   color: #61dafb;
 }
 
 .signup-btn {
   border-radius: 5px;
-  background: #f9d241;
+  background: var(--banger-yellow);
   padding: 10px;
+}
+
+.signup-btn:hover {
+  background: black;
+  border: 1px solid var(--banger-yellow);
 }
 
 .login-btn {
   border-radius: 5px;
-  border: 1px solid #f9d241;
+  border: 1px solid var(--banger-yellow);
   padding: 10px;
+}
+
+.login-btn:hover {
+  background: var(--banger-yellow);
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @keyframes App-logo-spin {

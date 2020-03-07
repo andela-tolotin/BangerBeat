@@ -19,34 +19,36 @@ function App() {
       <Router>
         <React.Fragment>
           <header className="App-header">
-            <div className={"companyBrand"}>
-              <img className="App-logo" src={logo} alt={"App logo"} />
-              <h3>{brand.brandname}</h3>
-            </div>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/genres">Genres</Link>
-              </li>
-              <li>
-                <Link to="/beats">Beat</Link>
-              </li>
-              <li>
-                <Link to="/blog">Blog</Link>
-              </li>
-              <li>
-                <Link to="/login" className="login-btn">
-                  LOG IN
-                </Link>
-              </li>
-              <li>
-                <Link to="/signup" className="signup-btn">
-                  SIGN UP
-                </Link>
-              </li>
-            </ul>
+            <nav>
+              <div className={"companyBrand"}>
+                <img className="App-logo" src={logo} alt={"App logo"} />
+                <h3>{brand.brandname}</h3>
+              </div>
+              <ul>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/genres">Genres</Link>
+                </li>
+                <li>
+                  <Link to="/beats">Beat</Link>
+                </li>
+                <li>
+                  <Link to="/blog">Blog</Link>
+                </li>
+                <li>
+                  <Link to="/login" className="login-btn">
+                    LOG IN
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/signup" className="signup-btn">
+                    SIGN UP
+                  </Link>
+                </li>
+              </ul>
+            </nav>
           </header>
           <Switch>
             {routes.map(route => (
