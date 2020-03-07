@@ -3,13 +3,13 @@
 }
 
 .App-logo {
-  height: 15vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    /*animation: App-logo-spin infinite 20s linear;*/
+    animation: App-logo-spin infinite 20s linear;
   }
 }
 
@@ -39,8 +39,9 @@
 .App-header ul li a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
+  padding: 10px;
 }
 
 .companyBrand {
@@ -51,6 +52,18 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.signup-btn {
+  border-radius: 5px;
+  background: #f9d241;
+  padding: 10px;
+}
+
+.login-btn {
+  border-radius: 5px;
+  border: 1px solid #f9d241;
+  padding: 10px;
 }
 
 @keyframes App-logo-spin {

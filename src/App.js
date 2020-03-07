@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import logo from "./logo.svg";
 import routes from "./routes";
-
+import brand from "./utils/bangerbeats";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
 const NotFound = () => {
@@ -21,7 +21,7 @@ function App() {
           <header className="App-header">
             <div className={"companyBrand"}>
               <img className="App-logo" src={logo} alt={"App logo"} />
-              <h3>BANGERBEATS</h3>
+              <h3>{brand.brandname}</h3>
             </div>
             <ul>
               <li>
@@ -35,6 +35,16 @@ function App() {
               </li>
               <li>
                 <Link to="/blog">Blog</Link>
+              </li>
+              <li>
+                <Link to="/login" className="login-btn">
+                  LOG IN
+                </Link>
+              </li>
+              <li>
+                <Link to="/signup" className="signup-btn">
+                  SIGN UP
+                </Link>
               </li>
             </ul>
           </header>
