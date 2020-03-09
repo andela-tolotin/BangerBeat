@@ -40,7 +40,7 @@ function TopProducer(props) {
   return (
     <div className={"top_producers"}>
       <div className="producer_wrapper">
-        <h2 className="large_heading">Top Producers</h2>
+        <div className="large_heading">Top Producers</div>
         <ul>{topProducers.map(props.callbackfn)}</ul>
       </div>
     </div>
@@ -53,7 +53,7 @@ function BeatCategory(props) {
   return (
     <div className={"beat_categories"}>
       <div className="producer_wrapper">
-        <h2 className="large_heading">Beat Categories</h2>
+        <div className="large_heading">Beat Categories</div>
         <ul>{beatCategories.map(props.callbackfn)}</ul>
       </div>
       <p className={"categories"}>
@@ -70,7 +70,7 @@ function TypeBeat(props) {
   return (
     <div className={"type_beats"}>
       <div className="producer_wrapper">
-        <h2 className="large_heading">Type Beats</h2>
+        <div className="large_heading">Type Beats</div>
         <ul>{typeBeats.map(props.callbackfn)}</ul>
       </div>
     </div>
