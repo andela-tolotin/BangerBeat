@@ -29,6 +29,8 @@
   line-height: 60px;
   text-align: left;
   width: 600px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .beat_search_form {
   padding: 20px;
@@ -56,6 +58,7 @@
   font-weight: 600;
   align-self: flex-start;
   width: 200px;
+  transition: ease-in-out 1s;
 }
 
 .filled-solid-btn:hover {
@@ -116,10 +119,12 @@
 .heading_big_black_text {
   align-self: center;
   color: white;
-  font-weight: 700;
-  font-size: 42px;
+  font-weight: 600;
+  font-size: 52px;
   padding: 20px 40px 10px;
   text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .how_it_works,
@@ -190,13 +195,15 @@ h4.category_name {
 
 .producer_wrapper .heading_big_black_text {
   color: var(--banger-yellow);
-  font-size: 42px;
+  font-size: 48px;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .categories {
   padding: 20px;
   text-align: center;
-  width: 100%;
   min-height: 50px;
   margin: 0;
 }

@@ -36,34 +36,6 @@ function HowItWorks(props) {
 
 HowItWorks.propTypes = { callbackfn: PropTypes.func };
 
-function SearchBeat(props) {
-  return (
-    <div className="beat_search_form">
-      <input
-        className="search_beat form-control"
-        type="text"
-        placeholder="What type of beats are you looking for?"
-        ref={props.ref}
-        onChange={props.onChange}
-      />
-      <div className="action_buttons">
-        <button className="filled-solid-btn btn" onClick={props.onClick}>
-          Search
-        </button>
-        <Link to="/sell-beats" className="filled-outline-btn btn">
-          Sell Beat
-        </Link>
-      </div>
-    </div>
-  );
-}
-
-SearchBeat.propTypes = {
-  ref: PropTypes.any,
-  onChange: PropTypes.func,
-  onClick: PropTypes.func
-};
-
 function TopProducer(props) {
   return (
     <div className={"top_producers"}>
@@ -108,11 +80,11 @@ function TypeBeat(props) {
 TypeBeat.propTypes = { callbackfn: PropTypes.func };
 
 const Home = () => {
-  const searchRef = React.useRef();
   const [search, setSearch] = React.useState("");
+  const searchRef = React.useRef();
   const captureInput = () => {
-    console.log(searchRef.current);
-    //setSearch(searchRef.current.value);
+    //console.log(searchRef.current);
+    setSearch(searchRef.current.value);
   };
 
   const listBeat = () => {
@@ -126,11 +98,23 @@ const Home = () => {
         <div className="music_background">
           <div className="home_wrapper">
             <h1>Buying and Selling of Beats Online Just got easier</h1>
-            <SearchBeat
-              ref={searchRef}
-              onChange={captureInput}
-              onClick={listBeat}
-            />
+            <div className="beat_search_form">
+              <input
+                className="search_beat form-control"
+                type="text"
+                placeholder="What type of beats are you looking for?"
+                ref={searchRef}
+                onChange={captureInput}
+              />
+              <div className="action_buttons">
+                <button className="filled-solid-btn btn" onClick={listBeat}>
+                  Search
+                </button>
+                <Link to="/sell-beats" className="filled-outline-btn btn">
+                  Sell Beat
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
