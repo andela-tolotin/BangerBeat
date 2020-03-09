@@ -4,7 +4,6 @@
     <list default="true" id="5c5d5c8c-c0a2-4f95-bf3e-4d991d19686e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/css/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomeComponent.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +85,7 @@
       <workItem from="1582961151279" duration="2702000" />
       <workItem from="1583143772548" duration="7093000" />
       <workItem from="1583317793868" duration="10070000" />
-      <workItem from="1583433069458" duration="37332000" />
+      <workItem from="1583433069458" duration="37494000" />
     </task>
     <servers />
   </component>
@@ -102,10 +101,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="440" y="190" key="#Notifications/0.0.1680.1050@0.0.1680.1050" timestamp="1583535250471" />
-    <state x="417" y="40" key="CommitChangelistDialog2" timestamp="1583576108277">
+    <state x="417" y="40" key="CommitChangelistDialog2" timestamp="1583754379432">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="417" y="40" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1583576108277" />
+    <state x="417" y="40" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1583754379432" />
     <state x="341" y="164" key="SettingsEditor" timestamp="1582981360431">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
