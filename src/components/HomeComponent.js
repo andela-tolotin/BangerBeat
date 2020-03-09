@@ -40,7 +40,7 @@ function TopProducer(props) {
   return (
     <div className={"top_producers"}>
       <div className="producer_wrapper">
-        <div className="heading_big_black_text">Top Producers</div>
+        <h2 className="large_heading">Top Producers</h2>
         <ul>{topProducers.map(props.callbackfn)}</ul>
       </div>
     </div>
@@ -53,7 +53,7 @@ function BeatCategory(props) {
   return (
     <div className={"beat_categories"}>
       <div className="producer_wrapper">
-        <div className="heading_big_black_text">Beat Categories</div>
+        <h2 className="large_heading">Beat Categories</h2>
         <ul>{beatCategories.map(props.callbackfn)}</ul>
       </div>
       <p className={"categories"}>
@@ -70,7 +70,7 @@ function TypeBeat(props) {
   return (
     <div className={"type_beats"}>
       <div className="producer_wrapper">
-        <div className="heading_big_black_text">Type Beats</div>
+        <h2 className="large_heading">Type Beats</h2>
         <ul>{typeBeats.map(props.callbackfn)}</ul>
       </div>
     </div>
@@ -128,7 +128,7 @@ const Home = () => {
             <li key={producer.id}>
               <div className="img_wrapper">
                 <img src={producer.photo} alt={producer.stagename} />
-                <h4 className="producer_stagename">{producer.stagename}</h4>
+                <h4 className="large_heading">{producer.stagename}</h4>
               </div>
             </li>
           )}
@@ -140,7 +140,7 @@ const Home = () => {
             <li key={category.id}>
               <div className="img_wrapper">
                 <img src={category.photo} alt={category.name} />
-                <h4 className="category_name">{category.name}</h4>
+                <h4 className="large_heading">{category.name}</h4>
               </div>
             </li>
           )}
@@ -152,7 +152,7 @@ const Home = () => {
             <li key={beat.id}>
               <div className="img_wrapper">
                 <img src={beat.photo} alt={beat.name} />
-                <h4 className="category_name">{beat.name}</h4>
+                <h4 className="large_heading">{beat.name}</h4>
               </div>
             </li>
           )}

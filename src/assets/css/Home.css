@@ -104,8 +104,11 @@
 }
 
 .large_heading {
+  font-size: 20px;
   color: var(--banger-yellow);
   align-self: center;
+  width: 100%;
+  font-weight: 600;
 }
 
 .small_text {
