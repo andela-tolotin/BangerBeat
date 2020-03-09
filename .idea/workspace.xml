@@ -71,6 +71,18 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -85,7 +97,7 @@
       <workItem from="1582961151279" duration="2702000" />
       <workItem from="1583143772548" duration="7093000" />
       <workItem from="1583317793868" duration="10070000" />
-      <workItem from="1583433069458" duration="37494000" />
+      <workItem from="1583433069458" duration="38399000" />
     </task>
     <servers />
   </component>
