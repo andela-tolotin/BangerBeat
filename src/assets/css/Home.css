@@ -209,6 +209,11 @@ h4.category_name {
 }
 .categories a {
   text-decoration: none;
+  color: var(--banger-black);
+}
+
+.categories a:hover {
+  color: white;
 }
 
 .form-control {

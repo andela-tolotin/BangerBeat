@@ -83,7 +83,6 @@ const Home = () => {
   const [search, setSearch] = React.useState("");
   const searchRef = React.useRef();
   const captureInput = () => {
-    //console.log(searchRef.current);
     setSearch(searchRef.current.value);
   };
 

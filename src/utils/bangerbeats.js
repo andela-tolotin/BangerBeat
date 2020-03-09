@@ -41,22 +41,22 @@ export const howItWorks = [
 export const topProducers = [
   {
     id: 1,
-    photo: "https://picsum.photos/seed/picsum/200/200/?blur",
+    photo: "https://picsum.photos/seed/picsum/200/200",
     stagename: "Trap Beats"
   },
   {
     id: 2,
-    photo: "https://picsum.photos/seed/picsum/200/200/?blur",
+    photo: "https://picsum.photos/seed/picsum/200/200",
     stagename: "Reek Beats"
   },
   {
     id: 3,
-    photo: "https://picsum.photos/seed/picsum/200/200/?blur",
+    photo: "https://picsum.photos/seed/picsum/200/200",
     stagename: "Sense Beats"
   },
   {
     id: 4,
-    photo: "https://picsum.photos/seed/picsum/200/200/?blur",
+    photo: "https://picsum.photos/seed/picsum/200/200",
     stagename: "Flptyce Beats"
   }
 ];
@@ -64,22 +64,22 @@ export const topProducers = [
 export const beatCategories = [
   {
     id: 1,
-    photo: "https://picsum.photos/200/200/?blur",
+    photo: "https://picsum.photos/200/200",
     name: "Afro Beat"
   },
   {
     id: 2,
-    photo: "https://picsum.photos/200/200/?blur",
+    photo: "https://picsum.photos/200/200",
     name: "Rap Beat"
   },
   {
     id: 3,
-    photo: "https://picsum.photos/200/200/?blur",
+    photo: "https://picsum.photos/200/200",
     name: "Dance Hall"
   },
   {
     id: 4,
-    photo: "https://picsum.photos/200/200/?blur",
+    photo: "https://picsum.photos/200/200",
     name: "Raggae Beat"
   }
 ];
