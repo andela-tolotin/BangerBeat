@@ -76,6 +76,7 @@
   align-self: flex-start;
   width: 200px;
   text-decoration: none;
+  margin-left: 20px;
 }
 
 .filled-outline-btn:hover {
