@@ -14,6 +14,12 @@
   height: auto;
 }
 
+.home_wrapper {
+  min-height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
 .home_wrapper h1,
 .producer_wrapper h3 {
   align-self: flex-start;
@@ -67,8 +73,8 @@
 }
 
 .filled-outline-btn {
-  padding: 18px;
-  border: 1px solid var(--banger-yellow);
+  padding: 16px;
+  border: 2px solid var(--banger-yellow);
   color: white;
   font-size: 16px;
   border-radius: 5px;
@@ -76,7 +82,7 @@
   align-self: flex-start;
   width: 200px;
   text-decoration: none;
-  margin-left: 20px;
+  margin: 0 20px 0 20px;
 }
 
 .filled-outline-btn:hover {
@@ -228,7 +234,7 @@ h4.category_name {
   color: white;
 }
 
-div.large_heading {
+.large_heading {
   padding: 20px;
   font-size: 22px;
 }
@@ -263,4 +269,160 @@ div.large_heading {
 
 .get_started {
   justify-content: center;
+}
+
+@media (min-width: 360px) {
+  .home_wrapper,
+  .producer_wrapper {
+    width: 90%;
+  }
+
+  .home_wrapper h1,
+  .producer_wrapper h3 {
+    width: 100%;
+  }
+
+  .beat_search_form {
+    width: 100%;
+  }
+
+  .processes {
+    width: 90%;
+  }
+  .heading_big_black_text {
+    padding: 20px 0 10px;
+    font-size: 48px;
+  }
+
+  .process_wrapper {
+    width: 100%;
+  }
+  .producer_wrapper ul li {
+    width: 45%;
+    margin: 5px;
+  }
+
+  div.large_heading {
+    text-align: center;
+  }
+
+  .process,
+  .process_wrapper {
+    padding: 0;
+  }
+
+  .ready_for_music_career h1 {
+    font-size: 38px;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .ready_for_music_career h2 {
+    font-size: 32px;
+  }
+
+  .filled-outline-btn {
+    width: 150px;
+    margin: 0 10px 0 10px;
+  }
+  nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  .companyBrand {
+    width: 100%;
+    justify-content: center;
+  }
+  .App-header ul {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    width: 90%;
+  }
+  .companyBrand {
+    width: 50%;
+    justify-content: flex-start;
+  }
+  .home_wrapper h1,
+  .producer_wrapper h3 {
+    font-size: 52px;
+  }
+  .home_wrapper,
+  .producer_wrapper {
+    width: 90%;
+  }
+  .producer_wrapper ul li {
+    width: 33.333%;
+    margin: 0;
+  }
+
+  .process_wrapper {
+    width: 50%;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .home_wrapper,
+  .producer_wrapper {
+    flex-direction: column;
+    width: 80%;
+  }
+  .home_wrapper h1,
+  .producer_wrapper h3 {
+    width: 50%;
+  }
+
+  .beat_search_form {
+    padding: 20px 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    align-self: flex-start;
+  }
+  /*.home_wrapper  {*/
+  /*  justify-content: center;*/
+  /*}*/
+
+  .producer_wrapper ul {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  .producer_wrapper ul li {
+    width: 25%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  nav {
+    width: 80%;
+    margin: auto;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .App-header ul {
+    width: 70%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+  }
+
+  .companyBrand {
+    width: 30%;
+    justify-content: flex-start;
+  }
+  div.large_heading {
+    text-align: left;
+  }
 }

@@ -97,7 +97,8 @@
       <workItem from="1582961151279" duration="2702000" />
       <workItem from="1583143772548" duration="7093000" />
       <workItem from="1583317793868" duration="10070000" />
-      <workItem from="1583433069458" duration="54297000" />
+      <workItem from="1583433069458" duration="57999000" />
+      <workItem from="1584214597043" duration="2677000" />
     </task>
     <servers />
   </component>
@@ -113,10 +114,14 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="440" y="190" key="#Notifications/0.0.1680.1050@0.0.1680.1050" timestamp="1583535250471" />
-    <state x="417" y="40" key="CommitChangelistDialog2" timestamp="1584181491843">
+    <state x="528" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584211424411">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="417" y="40" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1584181491843" />
+    <state x="528" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1584211424411" />
+    <state x="417" y="40" key="CommitChangelistDialog2" timestamp="1584181495108">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="417" y="40" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1584181495108" />
     <state x="341" y="164" key="SettingsEditor" timestamp="1582981360431">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
