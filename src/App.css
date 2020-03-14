@@ -9,18 +9,8 @@ body {
   font-family: Poppins, Roboto, "Helvetica Neue", sans-serif;
 }
 
-#root {
-  width: 100%;
-  margin: auto;
-  padding: 0;
-}
-
-.App {
-  width: 100%;
-}
-
 .App-logo {
-  height: 10vmin;
+  height: 10vmin !important;
   pointer-events: none;
 }
 
@@ -31,28 +21,28 @@ body {
 }
 
 @media screen and (min-width: 240px) {
-  #root {
-    width: 100%;
-  }
 }
 
 .App-header {
   background-color: #000;
   min-height: 100px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   font-size: calc(8px + 2vmin);
   color: white;
   list-style: none;
+  width: 100%;
 }
 
 .App-header ul {
+  align-items: center;
+  justify-content: flex-end;
   display: flex;
   flex-direction: row;
   list-style: none;
   padding: 0;
+  width: 70%;
 }
 
 .App-header ul li {
@@ -69,8 +59,9 @@ body {
 
 .companyBrand {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  width: 30%;
 }
 
 .companyBrand h3 {
@@ -78,7 +69,7 @@ body {
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--banger-black);
 }
 
 .signup-btn {
@@ -105,7 +96,7 @@ body {
 nav {
   width: 80%;
   margin: auto;
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
 }
@@ -117,4 +108,16 @@ nav {
   to {
     transform: rotate(360deg);
   }
+}
+a {
+  text-decoration: none !important;
+}
+
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  padding: 0 !important;
+  overflow: hidden;
 }

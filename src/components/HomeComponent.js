@@ -9,6 +9,8 @@ import {
   typeBeats
 } from "../utils/bangerbeats";
 
+import { Row, Col, Image, Form } from "react-bootstrap";
+
 const Stepper = ({ step }) => {
   return (
     <React.Fragment>
@@ -93,97 +95,109 @@ const Home = () => {
   };
   return (
     <React.Fragment>
-      <div className="row">
-        <div className="music_background">
-          <div className="home_wrapper">
-            <h1>Buying and Selling of Beats Online Just got easier</h1>
-            <div className="beat_search_form">
-              <input
-                className="search_beat form-control"
-                type="text"
-                placeholder="What type of beats are you looking for?"
-                ref={searchRef}
-                onChange={captureInput}
-              />
-              <div className="action_buttons">
-                <button className="filled-solid-btn btn" onClick={listBeat}>
-                  Search
-                </button>
-                <Link to="/sell-beats" className="filled-outline-btn btn">
-                  Sell Beat
-                </Link>
+      <Row>
+        <Col>
+          <div className="music_background">
+            <div className="home_wrapper">
+              <h1>Buying and Selling of Beats Online Just got easier</h1>
+              <div className="beat_search_form">
+                <Form.Control
+                  className="search_beat"
+                  placeholder="What type of beats are you looking for?"
+                  ref={searchRef}
+                  onChange={captureInput}
+                  size={"lg"}
+                />
+                <div className="action_buttons">
+                  <button className="filled-solid-btn" onClick={listBeat}>
+                    Search
+                  </button>
+                  <Link to="/sell-beats" className="filled-outline-btn">
+                    Sell Beat
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="row">
-        <HowItWorks
-          callbackfn={stepper => <Stepper key={stepper.id} step={stepper} />}
-        />
-      </div>
-      <div className="row">
-        <TopProducer
-          callbackfn={producer => (
-            <li key={producer.id}>
-              <div className="img_wrapper">
-                <img src={producer.photo} alt={producer.stagename} />
-                <Link
-                  className="large_heading"
-                  to={`/producers/${producer.stagename}`}
-                >
-                  {producer.stagename}
-                </Link>
-              </div>
-            </li>
-          )}
-        />
-      </div>
-      <div className="row">
-        <BeatCategory
-          callbackfn={category => (
-            <li key={category.id}>
-              <div className="img_wrapper">
-                <img src={category.photo} alt={category.name} />
-                <Link
-                  className="large_heading"
-                  to={`/categories/${category.name}`}
-                >
-                  {category.name}
-                </Link>
-              </div>
-            </li>
-          )}
-        />
-      </div>
-      <div className="row">
-        <TypeBeat
-          callbackfn={beat => (
-            <li key={beat.id}>
-              <div className="img_wrapper">
-                <img src={beat.photo} alt={beat.name} />
-                <Link className="large_heading" to={`/beats/${beat.name}`}>
-                  {beat.name}
-                </Link>
-              </div>
-            </li>
-          )}
-        />
-      </div>
-      <div className="row">
-        <div className="ready_for_music_career">
-          <h1>Ready to start your online music career?</h1>
-          <h2>Get Started Now</h2>
-          <div className="action_buttons">
-            <Link to="/sell-beats" className="filled-outline-btn btn">
-              Sell Beats
-            </Link>
-            <Link to="/buy-beats" className="filled-outline-btn btn">
-              Buy Beats
-            </Link>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <HowItWorks
+            callbackfn={stepper => <Stepper key={stepper.id} step={stepper} />}
+          />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <TopProducer
+            callbackfn={producer => (
+              <li key={producer.id}>
+                <div className="img_wrapper">
+                  <Image src={producer.photo} alt={producer.stagename} fluid />
+                  <Link
+                    className="large_heading"
+                    to={`/producers/${producer.stagename}`}
+                  >
+                    {producer.stagename}
+                  </Link>
+                </div>
+              </li>
+            )}
+          />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <BeatCategory
+            callbackfn={category => (
+              <li key={category.id}>
+                <div className="img_wrapper">
+                  <Image src={category.photo} alt={category.name} fluid />
+                  <Link
+                    className="large_heading"
+                    to={`/categories/${category.name}`}
+                  >
+                    {category.name}
+                  </Link>
+                </div>
+              </li>
+            )}
+          />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <TypeBeat
+            callbackfn={beat => (
+              <li key={beat.id}>
+                <div className="img_wrapper">
+                  <Image src={beat.photo} alt={beat.name} fluid />
+                  <Link className="large_heading" to={`/beats/${beat.name}`}>
+                    {beat.name}
+                  </Link>
+                </div>
+              </li>
+            )}
+          />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <div className="ready_for_music_career">
+            <h1>Ready to start your online music career?</h1>
+            <h2>Get Started Now</h2>
+            <div className="action_buttons get_started">
+              <Link to="/sell-beats" className="filled-outline-btn">
+                Sell Beats
+              </Link>
+              <Link to="/buy-beats" className="filled-outline-btn">
+                Buy Beats
+              </Link>
+            </div>
           </div>
-        </div>
-      </div>
+        </Col>
+      </Row>
     </React.Fragment>
   );
 };
