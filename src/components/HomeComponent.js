@@ -128,7 +128,12 @@ const Home = () => {
             <li key={producer.id}>
               <div className="img_wrapper">
                 <img src={producer.photo} alt={producer.stagename} />
-                <h4 className="large_heading">{producer.stagename}</h4>
+                <Link
+                  className="large_heading"
+                  to={`/producers/${producer.stagename}`}
+                >
+                  {producer.stagename}
+                </Link>
               </div>
             </li>
           )}
@@ -140,7 +145,12 @@ const Home = () => {
             <li key={category.id}>
               <div className="img_wrapper">
                 <img src={category.photo} alt={category.name} />
-                <h4 className="large_heading">{category.name}</h4>
+                <Link
+                  className="large_heading"
+                  to={`/categories/${category.name}`}
+                >
+                  {category.name}
+                </Link>
               </div>
             </li>
           )}
@@ -152,7 +162,9 @@ const Home = () => {
             <li key={beat.id}>
               <div className="img_wrapper">
                 <img src={beat.photo} alt={beat.name} />
-                <h4 className="large_heading">{beat.name}</h4>
+                <Link className="large_heading" to={`/beats/${beat.name}`}>
+                  {beat.name}
+                </Link>
               </div>
             </li>
           )}
