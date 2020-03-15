@@ -86,6 +86,7 @@ TypeBeat.propTypes = { callbackfn: PropTypes.func };
 const Home = () => {
   const [search, setSearch] = React.useState("");
   const searchRef = React.useRef();
+  const copyRightYear = new Date();
   const captureInput = () => {
     setSearch(searchRef.current.value);
   };
@@ -246,12 +247,10 @@ const Home = () => {
                 </address>
               </div>
             </div>
+            <p className={"copyright"}>
+              BangerBeat &copy; {copyRightYear.getFullYear()}
+            </p>
           </footer>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <p className={"copyright"}></p>
         </Col>
       </Row>
     </React.Fragment>
