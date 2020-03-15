@@ -249,6 +249,11 @@ const Home = () => {
           </footer>
         </Col>
       </Row>
+      <Row>
+        <Col>
+          <p className={"copyright"}></p>
+        </Col>
+      </Row>
     </React.Fragment>
   );
 };

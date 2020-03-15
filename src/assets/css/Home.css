@@ -159,7 +159,7 @@
 .beat_categories {
   background: #121213;
   width: 100%;
-  min-height: 400px;
+  min-height: 450px;
 }
 
 .type_beats {
@@ -412,6 +412,14 @@ h4.category_name {
   .form-control-lg {
     font-size: 1.05rem;
   }
+
+  .img_wrapper a {
+    font-size: 18px;
+  }
+
+  .get_started a:hover {
+    background: white;
+  }
 }
 
 @media (min-width: 768px) {
@@ -454,6 +462,18 @@ h4.category_name {
 
   .form-control-lg {
     font-size: 1.25rem;
+  }
+
+  .processes {
+    width: 80%;
+  }
+
+  .img_wrapper a {
+    font-size: 16px;
+  }
+
+  .img_wrapper a:hover {
+    color: #f9a20e;
   }
 }
 
