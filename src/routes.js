@@ -2,7 +2,6 @@ import Home from "./components/HomeComponent";
 import Genres from "./components/GenresComponent";
 import Beats from "./components/BeatsComponent";
 import Blog from "./components/BlogComponent";
-import SignUp from "./components/SignUpComponent";
 import Login from "./components/LoginComponent";
 
 const routes = [
@@ -40,13 +39,6 @@ const routes = [
     exact: false,
     name: "Login",
     index: 4
-  },
-  {
-    path: "/signup",
-    component: SignUp,
-    exact: false,
-    name: "Sign up",
-    index: 5
   }
 ];
 

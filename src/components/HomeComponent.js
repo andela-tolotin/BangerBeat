@@ -2,14 +2,16 @@ import React from "react";
 import "../assets/css/Home.css";
 import { Link } from "react-router-dom";
 import * as PropTypes from "prop-types";
-import {
+import brand, {
   beatCategories,
   howItWorks,
   topProducers,
-  typeBeats
+  typeBeats,
+  supportLinks,
+  socialLinks
 } from "../utils/bangerbeats";
-
 import { Row, Col, Image, Form } from "react-bootstrap";
+import logo from "../logo.svg";
 
 const Stepper = ({ step }) => {
   return (
@@ -196,6 +198,55 @@ const Home = () => {
               </Link>
             </div>
           </div>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <footer>
+            <div className={"footer_wrapper"}>
+              <div className={"footer_company_brand"}>
+                <Image
+                  className="App-logo"
+                  src={logo}
+                  alt={"Banger Beat logo"}
+                  fluid
+                />
+                <h3>{brand.brandname}</h3>
+              </div>
+              <div className={"support"}>
+                <ul>
+                  {supportLinks.map(link => (
+                    <li key={link.title}>
+                      <Link to={link.url}>{link.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className={"social"}>
+                <ul>
+                  {socialLinks.map(link => (
+                    <li key={link.title}>
+                      <Link to={link.url}>{link.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className={"morelinks"}>
+                <ul>
+                  <li>
+                    <Link to="/about-us">About us</Link>
+                  </li>
+                  <li>
+                    <Link to="/blog">Blog</Link>
+                  </li>
+                </ul>
+                <address>
+                  Banger beats, Herbert Macaulay Road, Opposite WAEC office,
+                  Yaba Lagos
+                </address>
+              </div>
+            </div>
+          </footer>
         </Col>
       </Row>
     </React.Fragment>

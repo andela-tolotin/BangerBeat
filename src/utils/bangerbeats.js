@@ -111,3 +111,49 @@ const brand = {
   brandname: "BANGERBEAT"
 };
 export default brand;
+
+export const supportLinks = [
+  {
+    title: "Support",
+    url: ""
+  },
+  {
+    title: "Terms",
+    url: ""
+  },
+  {
+    title: "FAQ",
+    url: ""
+  },
+  {
+    title: "Cookie Policy",
+    url: ""
+  },
+  {
+    title: "Contact Us",
+    url: ""
+  },
+  {
+    title: "Privacy Policy",
+    url: ""
+  }
+];
+
+export const socialLinks = [
+  {
+    title: "Facebook",
+    url: ""
+  },
+  {
+    title: "Twitter",
+    url: ""
+  },
+  {
+    title: "Instagram",
+    url: ""
+  },
+  {
+    title: "Youtube",
+    url: ""
+  }
+];

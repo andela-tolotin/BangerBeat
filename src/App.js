@@ -39,7 +39,7 @@ function App() {
                     <Link to="/genres">Genres</Link>
                   </li>
                   <li>
-                    <Link to="/beats">Beat</Link>
+                    <Link to="/beats">Beats</Link>
                   </li>
                   <li>
                     <Link to="/blog">Blog</Link>
@@ -47,11 +47,6 @@ function App() {
                   <li>
                     <Link to="/login" className="login-btn">
                       LOG IN
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/signup" className="signup-btn">
-                      SIGN UP
                     </Link>
                   </li>
                 </ul>

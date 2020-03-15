@@ -1,5 +1,5 @@
 .music_background {
-  background: url("../images/music_bg2.jpg") no-repeat fixed top center;
+  background: url("../images/music_bg4.jpg") no-repeat fixed top center;
   min-height: 550px;
   background-size: cover;
   width: 100%;
@@ -330,12 +330,83 @@ h4.category_name {
     width: 100%;
   }
   .companyBrand {
-    width: 100%;
     justify-content: center;
   }
   .App-header ul {
     width: 100%;
     justify-content: center;
+  }
+
+  footer {
+    display: flex !important;
+    min-height: 500px;
+    background: var(--banger-black);
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  footer .footer_company_brand h3 {
+    color: white;
+    font-weight: bolder;
+  }
+
+  address {
+    color: white;
+    padding: 20px 20px 20px;
+    font-size: 14px;
+  }
+
+  footer .footer_company_brand,
+  .support,
+  .social,
+  .morelinks {
+    width: 50%;
+    padding: 10px;
+  }
+
+  .support ul,
+  .social ul,
+  .morelinks ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .support ul li,
+  .social ul li {
+    width: 100%;
+  }
+  .support ul li a,
+  .social ul li a,
+  .morelinks ul li a {
+    color: white;
+    padding: 20px;
+  }
+
+  .footer_wrapper {
+    width: 90%;
+    margin: auto;
+    display: flex !important;
+    min-height: 500px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .footer_company_brand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .footer_company_brand h3 {
+    font-size: 14px;
   }
 }
 
@@ -365,6 +436,17 @@ h4.category_name {
     width: 50%;
     padding: 20px;
   }
+
+  footer .footer_company_brand,
+  .support,
+  .social,
+  .morelinks {
+    width: 25%;
+  }
+
+  .footer_wrapper {
+    width: 90%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -386,9 +468,6 @@ h4.category_name {
     width: 50%;
     align-self: flex-start;
   }
-  /*.home_wrapper  {*/
-  /*  justify-content: center;*/
-  /*}*/
 
   .producer_wrapper ul {
     justify-content: center;
@@ -424,5 +503,9 @@ h4.category_name {
   }
   div.large_heading {
     text-align: left;
+  }
+
+  .footer_wrapper {
+    width: 80%;
   }
 }
