@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c5d5c8c-c0a2-4f95-bf3e-4d991d19686e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/music_bg4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/css/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomeComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/bangerbeats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/bangerbeats.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +102,7 @@
       <workItem from="1583143772548" duration="7093000" />
       <workItem from="1583317793868" duration="10070000" />
       <workItem from="1583433069458" duration="57999000" />
-      <workItem from="1584214597043" duration="12919000" />
+      <workItem from="1584214597043" duration="13617000" />
     </task>
     <servers />
   </component>

@@ -271,7 +271,7 @@ h4.category_name {
   justify-content: center;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .home_wrapper,
   .producer_wrapper {
     width: 90%;
@@ -408,6 +408,10 @@ h4.category_name {
   .footer_company_brand h3 {
     font-size: 14px;
   }
+
+  .form-control-lg {
+    font-size: 1.05rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -446,6 +450,10 @@ h4.category_name {
 
   .footer_wrapper {
     width: 90%;
+  }
+
+  .form-control-lg {
+    font-size: 1.25rem;
   }
 }
 
