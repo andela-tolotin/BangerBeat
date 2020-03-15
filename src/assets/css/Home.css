@@ -393,7 +393,7 @@ h4.category_name {
     width: 90%;
     margin: auto;
     display: flex !important;
-    min-height: 500px;
+    min-height: 400px;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
