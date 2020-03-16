@@ -151,7 +151,7 @@
 }
 
 .top_producers {
-  background: #dae1e7;
+  background: #ffffff;
   width: 100%;
   min-height: 400px;
 }
@@ -535,6 +535,6 @@ h4.category_name {
   }
 
   .footer_wrapper {
-    width: 80%;
+    width: 60%;
   }
 }
