@@ -102,7 +102,7 @@ const Home = () => {
         <Col>
           <div className="music_background">
             <div className="home_wrapper">
-              <h1>Buying and Selling of Beats Online Just got easier</h1>
+              <h1>Buying And Selling Of Beats Online Just Got Easier</h1>
               <div className="beat_search_form">
                 <Form.Control
                   className="search_beat"
