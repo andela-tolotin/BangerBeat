@@ -188,7 +188,7 @@ const Home = () => {
       <Row>
         <Col>
           <div className="ready_for_music_career">
-            <h1>Ready to start your online music career?</h1>
+            <h1>Ready To Start Your Online Music Career?</h1>
             <h2>Get Started Now</h2>
             <div className="action_buttons get_started">
               <Link to="/sell-beats" className="filled-outline-btn">
@@ -247,6 +247,7 @@ const Home = () => {
                 </address>
               </div>
             </div>
+            <hr />
             <p className={"copyright"}>
               BangerBeat &copy; {copyRightYear.getFullYear()}
             </p>
