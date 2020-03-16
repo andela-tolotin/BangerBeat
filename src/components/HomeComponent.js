@@ -31,7 +31,7 @@ function HowItWorks(props) {
   return (
     <div className="how_it_works">
       <div className="processes">
-        <div className="heading_big_black_text">How it works</div>
+        <div className="heading_big_black_text">How It Works</div>
         <div className="process">{howItWorks.map(props.callbackfn)}</div>
       </div>
     </div>
