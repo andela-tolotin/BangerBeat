@@ -289,7 +289,7 @@ h4.category_name {
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-  color: var(--banger-yellow);
+  color: var(--banger-black) !important;
 }
 
 @media (min-width: 320px) {
