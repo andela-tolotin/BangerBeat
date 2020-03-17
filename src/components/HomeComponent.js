@@ -12,6 +12,43 @@ import brand, {
 } from "../utils/bangerbeats";
 import { Row, Col, Image, Form, Tabs, Tab } from "react-bootstrap";
 import logo from "../logo.svg";
+import CarouselSlider from "react-carousel-slider";
+import {
+  faChevronRight,
+  faChevronLeft
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const btnStyle = {
+  display: "inline-block",
+  position: "relative",
+  top: "50%",
+  transform: "translateY(-50%)",
+  fontSize: "36px"
+};
+const btnWrapperStyle = {
+  position: "relative",
+  borderRadius: "50%",
+  height: "50px",
+  width: "50px",
+  textAlign: "center",
+  color: "#FFFFFF"
+};
+const rBtnCpnt = (
+  <div style={btnWrapperStyle}>
+    <div style={btnStyle} className="material-icons">
+      <FontAwesomeIcon icon={faChevronRight} />{" "}
+    </div>
+  </div>
+);
+
+const lBtnCpnt = (
+  <div style={btnWrapperStyle}>
+    <div style={btnStyle} className="material-icons">
+      <FontAwesomeIcon icon={faChevronLeft} />
+    </div>
+  </div>
+);
 
 const Stepper = ({ step }) => {
   return (
@@ -52,7 +89,14 @@ function TopProducer(props) {
     <div className={"top_producers"}>
       <div className="producer_wrapper">
         <div className="large_heading">Top Producers</div>
-        <ul>{topProducers.map(props.callbackfn)}</ul>
+        {
+          <CarouselSlider
+            slideCpnts={topProducers.map(props.callbackfn)}
+            accEle={{ dots: false }}
+            rBtnCpnt={rBtnCpnt}
+            lBtnCpnt={lBtnCpnt}
+          />
+        }
       </div>
     </div>
   );
@@ -65,7 +109,14 @@ function BeatCategory(props) {
     <div className={"beat_categories"}>
       <div className="producer_wrapper">
         <div className="large_heading">Beat Categories</div>
-        <ul>{beatCategories.map(props.callbackfn)}</ul>
+        {
+          <CarouselSlider
+            slideCpnts={beatCategories.map(props.callbackfn)}
+            accEle={{ dots: false }}
+            rBtnCpnt={rBtnCpnt}
+            lBtnCpnt={lBtnCpnt}
+          />
+        }
       </div>
       <p className={"categories"}>
         <Link to={"categories"} className={"filled-solid-btn"}>
@@ -82,7 +133,14 @@ function TypeBeat(props) {
     <div className={"type_beats"}>
       <div className="producer_wrapper">
         <div className="large_heading">Type Beats</div>
-        <ul>{typeBeats.map(props.callbackfn)}</ul>
+        {
+          <CarouselSlider
+            slideCpnts={typeBeats.map(props.callbackfn)}
+            accEle={{ dots: false }}
+            rBtnCpnt={rBtnCpnt}
+            lBtnCpnt={lBtnCpnt}
+          />
+        }
       </div>
     </div>
   );
@@ -142,17 +200,20 @@ const Home = () => {
         <Col>
           <TopProducer
             callbackfn={producer => (
-              <li key={producer.id}>
-                <div className="img_wrapper">
-                  <Image src={producer.photo} alt={producer.stagename} fluid />
-                  <Link
-                    className="large_heading"
-                    to={`/producers/${producer.stagename}`}
-                  >
-                    {producer.stagename}
-                  </Link>
-                </div>
-              </li>
+              <div className="img_wrapper" key={producer.id}>
+                <Image
+                  src={producer.photo}
+                  alt={producer.stagename}
+                  fluid
+                  roundedCircle
+                />
+                <Link
+                  className="large_heading"
+                  to={`/producers/${producer.stagename}`}
+                >
+                  {producer.stagename}
+                </Link>
+              </div>
             )}
           />
         </Col>
@@ -161,17 +222,20 @@ const Home = () => {
         <Col>
           <BeatCategory
             callbackfn={category => (
-              <li key={category.id}>
-                <div className="img_wrapper">
-                  <Image src={category.photo} alt={category.name} fluid />
-                  <Link
-                    className="large_heading"
-                    to={`/categories/${category.name}`}
-                  >
-                    {category.name}
-                  </Link>
-                </div>
-              </li>
+              <div className="img_wrapper" key={category.id}>
+                <Image
+                  src={category.photo}
+                  alt={category.name}
+                  fluid
+                  roundedCircle
+                />
+                <Link
+                  className="large_heading"
+                  to={`/categories/${category.name}`}
+                >
+                  {category.name}
+                </Link>
+              </div>
             )}
           />
         </Col>
@@ -180,14 +244,12 @@ const Home = () => {
         <Col>
           <TypeBeat
             callbackfn={beat => (
-              <li key={beat.id}>
-                <div className="img_wrapper">
-                  <Image src={beat.photo} alt={beat.name} fluid />
-                  <Link className="large_heading" to={`/beats/${beat.name}`}>
-                    {beat.name}
-                  </Link>
-                </div>
-              </li>
+              <div className="img_wrapper" key={beat.id}>
+                <Image src={beat.photo} alt={beat.name} fluid roundedCircle />
+                <Link className="large_heading" to={`/beats/${beat.name}`}>
+                  {beat.name}
+                </Link>
+              </div>
             )}
           />
         </Col>
