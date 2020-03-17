@@ -10,7 +10,7 @@ import brand, {
   supportLinks,
   socialLinks
 } from "../utils/bangerbeats";
-import { Row, Col, Image, Form } from "react-bootstrap";
+import { Row, Col, Image, Form, Tabs, Tab } from "react-bootstrap";
 import logo from "../logo.svg";
 
 const Stepper = ({ step }) => {
@@ -32,7 +32,14 @@ function HowItWorks(props) {
     <div className="how_it_works">
       <div className="processes">
         <div className="heading_big_black_text">How It Works</div>
-        <div className="process">{howItWorks.map(props.callbackfn)}</div>
+        <Tabs defaultActiveKey="for_producers" id="uncontrolled-tab">
+          <Tab eventKey="for_producers" title="Producers">
+            <div className="process">{howItWorks.map(props.callbackfn)}</div>
+          </Tab>
+          <Tab eventKey="for_artists" title="Artists">
+            <div className="process">{howItWorks.map(props.callbackfn)}</div>
+          </Tab>
+        </Tabs>
       </div>
     </div>
   );
