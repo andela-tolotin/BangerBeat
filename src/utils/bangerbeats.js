@@ -108,7 +108,9 @@ export const typeBeats = [
 ];
 
 const brand = {
-  brandname: "BANGERBEAT"
+  brandname: "BANGERBEAT",
+  company_address:
+    "Banger beats, Herbert Macaulay Road, Opposite WAEC office, Yaba Lagos"
 };
 export default brand;
 

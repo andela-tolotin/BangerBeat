@@ -63,6 +63,7 @@ function App() {
               exact={route.exact}
             />
           ))}
+          {console.log()}
           <Route component={NotFound} />
         </Switch>
       </React.Fragment>

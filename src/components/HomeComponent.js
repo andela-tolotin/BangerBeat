@@ -310,10 +310,7 @@ const Home = () => {
                     <Link to="/blog">Blog</Link>
                   </li>
                 </ul>
-                <address>
-                  Banger beats, Herbert Macaulay Road, Opposite WAEC office,
-                  Yaba Lagos
-                </address>
+                <address>{brand.company_address}</address>
               </div>
             </div>
             <hr />
