@@ -449,6 +449,14 @@ h4.category_name {
   .get_started a:hover {
     background: white;
   }
+
+  .rcs_left {
+    left: 10px !important;
+  }
+
+  .rcs_right {
+    right: 10px !important;
+  }
 }
 
 @media (min-width: 768px) {
@@ -503,6 +511,14 @@ h4.category_name {
 
   .img_wrapper a:hover {
     color: #f9a20e;
+  }
+
+  .rcs_left {
+    left: 20px !important;
+  }
+
+  .rcs_right {
+    right: 20px !important;
   }
 }
 
@@ -564,5 +580,13 @@ h4.category_name {
 
   .footer_wrapper {
     width: 60%;
+  }
+
+  .rcs_left {
+    left: 140px !important;
+  }
+
+  .rcs_right {
+    right: 140px !important;
   }
 }
