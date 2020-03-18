@@ -95,7 +95,6 @@ function TopProducer(props) {
             accEle={{ dots: false }}
             rBtnCpnt={rBtnCpnt}
             lBtnCpnt={lBtnCpnt}
-            buttonSetting={{ placeOn: "middle-outside" }}
           />
         }
       </div>
@@ -116,7 +115,6 @@ function BeatCategory(props) {
             accEle={{ dots: false }}
             rBtnCpnt={rBtnCpnt}
             lBtnCpnt={lBtnCpnt}
-            buttonSetting={{ placeOn: "middle-outside" }}
           />
         }
       </div>
@@ -141,7 +139,6 @@ function TypeBeat(props) {
             accEle={{ dots: false }}
             rBtnCpnt={rBtnCpnt}
             lBtnCpnt={lBtnCpnt}
-            buttonSetting={{ placeOn: "middle-outside" }}
           />
         }
       </div>
