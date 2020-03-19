@@ -457,6 +457,10 @@ h4.category_name {
   .rcs_right {
     right: 10px !important;
   }
+
+  .App-logo {
+    height: 8vmin !important;
+  }
 }
 
 @media (min-width: 768px) {
