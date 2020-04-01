@@ -52,7 +52,6 @@ function HowItWorks(props) {
 }
 
 HowItWorks.propTypes = { callbackfn: PropTypes.func };
-
 function TopProducer(props) {
   const [activeItemIndex, setActiveItemIndex] = React.useState(0);
   const chevronWidth = 20;
@@ -90,7 +89,7 @@ function BeatCategory(props) {
           requestToChangeActive={setActiveItemIndex}
           activeItemIndex={activeItemIndex}
           numberOfCards={4}
-          gutter={10}
+          gutter={15}
           leftChevron={<FontAwesomeIcon icon={faChevronLeft} size={"2x"} />}
           rightChevron={<FontAwesomeIcon icon={faChevronRight} size={"2x"} />}
           outsideChevron

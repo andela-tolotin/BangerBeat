@@ -450,16 +450,21 @@ h4.category_name {
     background: white;
   }
 
-  .rcs_left {
-    left: 10px !important;
-  }
-
-  .rcs_right {
-    right: 10px !important;
-  }
-
   .App-logo {
     height: 8vmin !important;
+  }
+
+  .signup-steps {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+  }
+  #a_producer,
+  #a_musician,
+  #signup {
+    margin: 0 0 20px 0;
   }
 }
 
