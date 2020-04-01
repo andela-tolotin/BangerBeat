@@ -104,6 +104,26 @@ export const typeBeats = [
     id: 4,
     photo: "https://picsum.photos/id/237/200/200",
     name: "Raggae Beat"
+  },
+  {
+    id: 5,
+    photo: "https://picsum.photos/id/237/200/200",
+    name: "Afro Beat"
+  },
+  {
+    id: 6,
+    photo: "https://picsum.photos/id/237/200/200",
+    name: "Rap Beat"
+  },
+  {
+    id: 7,
+    photo: "https://picsum.photos/id/237/200/200",
+    name: "Dance Hall"
+  },
+  {
+    id: 8,
+    photo: "https://picsum.photos/id/237/200/200",
+    name: "Raggae Beat"
   }
 ];
 

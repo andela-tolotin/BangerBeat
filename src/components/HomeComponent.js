@@ -12,43 +12,12 @@ import brand, {
 } from "../utils/bangerbeats";
 import { Row, Col, Image, Form, Tabs, Tab } from "react-bootstrap";
 import logo from "../logo.svg";
-import CarouselSlider from "react-carousel-slider";
 import {
   faChevronRight,
   faChevronLeft
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-const btnStyle = {
-  display: "inline-block",
-  position: "relative",
-  top: "50%",
-  transform: "translateY(-50%)",
-  fontSize: "36px"
-};
-const btnWrapperStyle = {
-  position: "relative",
-  borderRadius: "50%",
-  height: "50px",
-  width: "50px",
-  textAlign: "center",
-  color: "#f9a20e"
-};
-const rBtnCpnt = (
-  <div style={btnWrapperStyle}>
-    <div style={btnStyle} className="material-icons">
-      <FontAwesomeIcon icon={faChevronRight} />{" "}
-    </div>
-  </div>
-);
-
-const lBtnCpnt = (
-  <div style={btnWrapperStyle}>
-    <div style={btnStyle} className="material-icons">
-      <FontAwesomeIcon icon={faChevronLeft} />
-    </div>
-  </div>
-);
+import ItemsCarousel from "react-items-carousel";
 
 const Stepper = ({ step }) => {
   return (
@@ -85,18 +54,24 @@ function HowItWorks(props) {
 HowItWorks.propTypes = { callbackfn: PropTypes.func };
 
 function TopProducer(props) {
+  const [activeItemIndex, setActiveItemIndex] = React.useState(0);
+  const chevronWidth = 20;
   return (
     <div className={"top_producers"}>
       <div className="producer_wrapper">
         <div className="large_heading">Top Producers</div>
-        {
-          <CarouselSlider
-            slideCpnts={topProducers.map(props.callbackfn)}
-            accEle={{ dots: false }}
-            rBtnCpnt={rBtnCpnt}
-            lBtnCpnt={lBtnCpnt}
-          />
-        }
+        <ItemsCarousel
+          requestToChangeActive={setActiveItemIndex}
+          activeItemIndex={activeItemIndex}
+          numberOfCards={4}
+          gutter={10}
+          leftChevron={<FontAwesomeIcon icon={faChevronLeft} size={"2x"} />}
+          rightChevron={<FontAwesomeIcon icon={faChevronRight} size={"2x"} />}
+          outsideChevron
+          chevronWidth={chevronWidth}
+        >
+          {topProducers.map(props.callbackfn)}
+        </ItemsCarousel>
       </div>
     </div>
   );
@@ -105,18 +80,24 @@ function TopProducer(props) {
 TopProducer.propTypes = { callbackfn: PropTypes.func };
 
 function BeatCategory(props) {
+  const [activeItemIndex, setActiveItemIndex] = React.useState(0);
+  const chevronWidth = 20;
   return (
     <div className={"beat_categories"}>
       <div className="producer_wrapper">
         <div className="large_heading">Beat Categories</div>
-        {
-          <CarouselSlider
-            slideCpnts={beatCategories.map(props.callbackfn)}
-            accEle={{ dots: false }}
-            rBtnCpnt={rBtnCpnt}
-            lBtnCpnt={lBtnCpnt}
-          />
-        }
+        <ItemsCarousel
+          requestToChangeActive={setActiveItemIndex}
+          activeItemIndex={activeItemIndex}
+          numberOfCards={4}
+          gutter={10}
+          leftChevron={<FontAwesomeIcon icon={faChevronLeft} size={"2x"} />}
+          rightChevron={<FontAwesomeIcon icon={faChevronRight} size={"2x"} />}
+          outsideChevron
+          chevronWidth={chevronWidth}
+        >
+          {beatCategories.map(props.callbackfn)}
+        </ItemsCarousel>
       </div>
       <p className={"categories"}>
         <Link to={"categories"} className={"filled-solid-btn"}>
@@ -129,18 +110,24 @@ function BeatCategory(props) {
 BeatCategory.propTypes = { callbackfn: PropTypes.func };
 
 function TypeBeat(props) {
+  const [activeItemIndex, setActiveItemIndex] = React.useState(0);
+  const chevronWidth = 20;
   return (
     <div className={"type_beats"}>
       <div className="producer_wrapper">
         <div className="large_heading">Type Beats</div>
-        {
-          <CarouselSlider
-            slideCpnts={typeBeats.map(props.callbackfn)}
-            accEle={{ dots: false }}
-            rBtnCpnt={rBtnCpnt}
-            lBtnCpnt={lBtnCpnt}
-          />
-        }
+        <ItemsCarousel
+          requestToChangeActive={setActiveItemIndex}
+          activeItemIndex={activeItemIndex}
+          numberOfCards={5}
+          gutter={10}
+          leftChevron={<FontAwesomeIcon icon={faChevronLeft} size={"2x"} />}
+          rightChevron={<FontAwesomeIcon icon={faChevronRight} size={"2x"} />}
+          outsideChevron
+          chevronWidth={chevronWidth}
+        >
+          {typeBeats.map(props.callbackfn)}
+        </ItemsCarousel>
       </div>
     </div>
   );

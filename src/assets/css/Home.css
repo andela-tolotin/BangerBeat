@@ -586,11 +586,8 @@ h4.category_name {
     width: 60%;
   }
 
-  .rcs_left {
-    left: 140px !important;
-  }
-
-  .rcs_right {
-    right: 140px !important;
+  .fa-chevron-right,
+  .fa-chevron-left {
+    color: #f9a20e;
   }
 }
