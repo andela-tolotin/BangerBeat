@@ -15,12 +15,19 @@ const SignUp = () => {
   const [email, setEmail] = React.useState("");
   const [stageName, setStateName] = React.useState("");
   const [password, setPassword] = React.useState("");
+  const [confirmpassword, setConfirmPassword] = React.useState("");
 
   const addEmail = e => {
     setEmail(e.target.value);
   };
   const addPassword = e => {
     setPassword(e.target.value);
+  };
+  const addStageName = e => {
+    setStateName(e.target.value);
+  };
+  const addConfirmPassword = e => {
+    setConfirmPassword(e.target.value);
   };
 
   const toSignupForm = () => {
@@ -30,11 +37,9 @@ const SignUp = () => {
         })
       : setGoNext(true);
   };
-  const submitSignUp = () => {};
-
-  const addStageName = () => {};
-
-  const addConfirmPassword = () => {};
+  const submitSignUp = e => {
+    e.preventDefault();
+  };
 
   return (
     <React.Fragment>
@@ -101,7 +106,7 @@ const SignUp = () => {
                   We'll never share your email with anyone else.
                 </Form.Text>
               </Form.Group>
-              <Form.Group controlId="formBasicEmail">
+              <Form.Group controlId="formBasicStageName">
                 <Form.Label>Stage Name</Form.Label>
                 <Form.Control
                   type="text"
@@ -122,12 +127,12 @@ const SignUp = () => {
                   onChange={addPassword}
                 />
               </Form.Group>
-              <Form.Group controlId="formBasicPassword">
+              <Form.Group controlId="formBasicConfirmPassword">
                 <Form.Label>Confirm Password</Form.Label>
                 <Form.Control
                   type="password"
                   placeholder="Password"
-                  value={password}
+                  value={confirmpassword}
                   onChange={addConfirmPassword}
                 />
               </Form.Group>
