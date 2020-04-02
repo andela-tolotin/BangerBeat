@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c5d5c8c-c0a2-4f95-bf3e-4d991d19686e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/_redirects" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoginComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/Home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SignUpComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignUpComponent.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,16 +48,17 @@
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/assets/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/build" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/assets/images" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -111,7 +111,7 @@
       <workItem from="1585313136859" duration="3366000" />
       <workItem from="1585594397269" duration="379000" />
       <workItem from="1585729230306" duration="8100000" />
-      <workItem from="1585771047038" duration="899000" />
+      <workItem from="1585771047038" duration="1426000" />
     </task>
     <servers />
   </component>

@@ -44,7 +44,7 @@ const SignUp = () => {
       <Row className="justify-content-md-center">
         <Col sm={4} md={6} lg={4}>
           <div className="signup-steps">
-            <p style={{ padding: "20px" }}>
+            <p>
               <FacebookLoginButton onClick={() => alert("Hello")} />
               <GoogleLoginButton onClick={() => alert("Hello")} />
             </p>

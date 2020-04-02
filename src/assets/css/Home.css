@@ -458,8 +458,9 @@ h4.category_name {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     margin: auto;
+    padding-top: 20px;
   }
   #a_producer,
   #a_musician,
