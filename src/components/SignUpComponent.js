@@ -19,7 +19,11 @@ const SignUp = () => {
             <h2 style={{ textAlign: "center" }}>I am a</h2>
             <button
               id="a_producer"
-              className="btn btn-outline-warning"
+              className={
+                type === "producer"
+                  ? "btn btn-warning"
+                  : "btn btn-outline-warning"
+              }
               onClick={() => {
                 setType("producer");
               }}
@@ -28,7 +32,11 @@ const SignUp = () => {
             </button>
             <button
               id="a_musician"
-              className="btn btn-outline-warning"
+              className={
+                type === "musican"
+                  ? "btn btn-warning"
+                  : "btn btn-outline-warning"
+              }
               onClick={() => {
                 setType("musican");
               }}
@@ -50,10 +58,7 @@ const SignUp = () => {
             </p>
             <p style={{ padding: "20px", textAlign: "right" }}>
               <Form.Text className="text-muted">
-                Already have an account yet?{" "}
-                <Link to={"/login"} className="">
-                  Log In
-                </Link>
+                Already have an account yet? <Link to={"/login"}>Log In</Link>
               </Form.Text>
             </p>
           </div>
