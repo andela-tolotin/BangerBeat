@@ -523,12 +523,8 @@ h4.category_name {
     color: #f9a20e;
   }
 
-  .rcs_left {
-    left: 20px !important;
-  }
-
-  .rcs_right {
-    right: 20px !important;
+  .App-logo {
+    height: 8vmin !important;
   }
 }
 

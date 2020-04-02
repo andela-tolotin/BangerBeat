@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Button, Form } from "react-bootstrap";
+import { Row, Col, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import {
   FacebookLoginButton,
@@ -8,27 +8,28 @@ import {
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import SignUpForm from "../forms/signup";
 
 const SignUp = () => {
   const [userType, setUserType] = React.useState("");
   const [goNext, setGoNext] = React.useState(false);
-  const [email, setEmail] = React.useState("");
-  const [stageName, setStateName] = React.useState("");
-  const [password, setPassword] = React.useState("");
-  const [confirmpassword, setConfirmPassword] = React.useState("");
-
-  const addEmail = e => {
-    setEmail(e.target.value);
-  };
-  const addPassword = e => {
-    setPassword(e.target.value);
-  };
-  const addStageName = e => {
-    setStateName(e.target.value);
-  };
-  const addConfirmPassword = e => {
-    setConfirmPassword(e.target.value);
-  };
+  // const [email, setEmail] = React.useState("");
+  // const [stageName, setStateName] = React.useState("");
+  // const [password, setPassword] = React.useState("");
+  // const [confirmPassword, setConfirmPassword] = React.useState("");
+  //
+  // const addEmail = e => {
+  //   setEmail(e.target.value);
+  // };
+  // const addPassword = e => {
+  //   setPassword(e.target.value);
+  // };
+  // const addStageName = e => {
+  //   setStateName(e.target.value);
+  // };
+  // const addConfirmPassword = e => {
+  //   setConfirmPassword(e.target.value);
+  // };
 
   const toSignupForm = () => {
     "" === userType
@@ -89,57 +90,7 @@ const SignUp = () => {
       {goNext === true && (
         <Row className="justify-content-md-center">
           <Col sm={4} md={6} lg={4}>
-            <Form
-              style={{ padding: "20px" }}
-              validated={true}
-              onSubmit={submitSignUp}
-            >
-              <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email Address</Form.Label>
-                <Form.Control
-                  type="email"
-                  placeholder="Enter email"
-                  value={email}
-                  onChange={addEmail}
-                />
-                <Form.Text className="text-muted">
-                  We'll never share your email with anyone else.
-                </Form.Text>
-              </Form.Group>
-              <Form.Group controlId="formBasicStageName">
-                <Form.Label>Stage Name</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="Enter stage name"
-                  value={stageName}
-                  onChange={addStageName}
-                />
-                <Form.Text className="text-muted">
-                  We'll never share your email with anyone else.
-                </Form.Text>
-              </Form.Group>
-              <Form.Group controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control
-                  type="password"
-                  placeholder="Password"
-                  value={password}
-                  onChange={addPassword}
-                />
-              </Form.Group>
-              <Form.Group controlId="formBasicConfirmPassword">
-                <Form.Label>Confirm Password</Form.Label>
-                <Form.Control
-                  type="password"
-                  placeholder="Password"
-                  value={confirmpassword}
-                  onChange={addConfirmPassword}
-                />
-              </Form.Group>
-              <Button variant="warning" type="submit" className={"filled"}>
-                SIGN UP
-              </Button>
-            </Form>
+            <SignUpForm />
             <div className="signup-steps">
               <p>
                 <FacebookLoginButton onClick={() => alert("Hello")} />
