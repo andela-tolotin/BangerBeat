@@ -64,14 +64,7 @@ const Login = () => {
           </p>
           <p style={{ padding: "20px", textAlign: "right" }}>
             <Form.Text className="text-muted">
-              Don't have an account yet?{" "}
-              <Link
-                to={"/signup"}
-                className="signup-btn"
-                style={{ color: "#FFFFFF" }}
-              >
-                Sign Up
-              </Link>
+              Don't have an account yet? <Link to={"/signup"}>Sign Up</Link>
             </Form.Text>
           </p>
         </Col>
