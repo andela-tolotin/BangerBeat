@@ -13,23 +13,6 @@ import SignUpForm from "../forms/signup";
 const SignUp = () => {
   const [userType, setUserType] = React.useState("");
   const [goNext, setGoNext] = React.useState(false);
-  // const [email, setEmail] = React.useState("");
-  // const [stageName, setStateName] = React.useState("");
-  // const [password, setPassword] = React.useState("");
-  // const [confirmPassword, setConfirmPassword] = React.useState("");
-  //
-  // const addEmail = e => {
-  //   setEmail(e.target.value);
-  // };
-  // const addPassword = e => {
-  //   setPassword(e.target.value);
-  // };
-  // const addStageName = e => {
-  //   setStateName(e.target.value);
-  // };
-  // const addConfirmPassword = e => {
-  //   setConfirmPassword(e.target.value);
-  // };
 
   const toSignupForm = () => {
     "" === userType
@@ -37,9 +20,6 @@ const SignUp = () => {
           position: toast.POSITION.TOP_RIGHT
         })
       : setGoNext(true);
-  };
-  const submitSignUp = e => {
-    e.preventDefault();
   };
 
   return (
@@ -90,6 +70,7 @@ const SignUp = () => {
       {goNext === true && (
         <Row className="justify-content-md-center">
           <Col sm={4} md={6} lg={4}>
+            <h4 style={{ textAlign: "center", padding: "20px" }}>Sign Up</h4>
             <SignUpForm />
             <div className="signup-steps">
               <p>
