@@ -13,17 +13,20 @@ const SignUpForm = () => {
     },
     validationSchema: Yup.object({
       email: Yup.string()
-        .email("Enter a valid email address")
-        .required("Required"),
-      stageName: Yup.string()
-        .max(50, "Only 50 characters allowed as stage name")
-        .required("Required"),
-      password: Yup.string()
-        .min(8, "Password must be minimum of 8 characters")
-        .required("Required"),
-      confirmPassword: Yup.string()
-        .min(8, "Password must be minimum of 8 characters")
         .required("Required")
+        .email("Enter a valid email address"),
+      stageName: Yup.string()
+        .required("Required")
+        .max(20, "Only 20 characters allowed as stage name"),
+      password: Yup.string()
+        .required("Required")
+        .matches(
+          /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,
+          "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and one special case Character"
+        ),
+      confirmPassword: Yup.string()
+        .required("Required")
+        .oneOf([Yup.ref("password"), null], "Passwords must match")
     }),
     onSubmit: values => {
       alert(JSON.stringify(values, null, 2));
@@ -42,12 +45,12 @@ const SignUpForm = () => {
             onBlur={formik.handleBlur}
             name="email"
           />
-          {formik.touched.email && formik.errors.email ? (
-            <Form.Text className="text-danger">{formik.errors.email}</Form.Text>
-          ) : null}
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.
           </Form.Text>
+          {formik.touched.email && formik.errors.email ? (
+            <Form.Text className="text-danger">{formik.errors.email}</Form.Text>
+          ) : null}
         </Form.Group>
         <Form.Group controlId="formBasicStageName">
           <Form.Label>Stage Name</Form.Label>
