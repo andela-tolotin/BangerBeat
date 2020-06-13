@@ -147,7 +147,7 @@
 }
 .processes {
   margin: auto;
-  width: 80%;
+  width: 70%;
 }
 
 .top_producers {
@@ -213,7 +213,7 @@ h4.category_name {
 
 .producer_wrapper .heading_big_black_text {
   color: var(--banger-yellow);
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 600;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -321,7 +321,7 @@ h4.category_name {
   }
 
   .processes {
-    width: 90%;
+    width: 70%;
   }
   .heading_big_black_text {
     padding: 20px 0 10px;
@@ -512,7 +512,7 @@ h4.category_name {
   }
 
   .processes {
-    width: 80%;
+    width: 70%;
   }
 
   .img_wrapper a {

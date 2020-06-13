@@ -1,17 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5c5d5c8c-c0a2-4f95-bf3e-4d991d19686e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/AvenirLTStd-Book.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/AvenirLTStd-Medium.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/AvenirLTStd-Roman.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/browse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/buy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/create.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/howitworks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/howitworks.style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HomeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomeComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="BangerBeat" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,6 +63,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -50,17 +78,17 @@
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/build" />
-      <recent name="$PROJECT_DIR$/src/assets/images" />
-      <recent name="$PROJECT_DIR$/src/assets" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/images" />
+      <recent name="$PROJECT_DIR$/src/assets/fonts" />
+      <recent name="$PROJECT_DIR$/build" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -117,20 +145,28 @@
       <workItem from="1587281645724" duration="1576000" />
       <workItem from="1587979853970" duration="208000" />
       <workItem from="1587980239343" duration="1213000" />
+      <workItem from="1592046899878" duration="12547000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2240" y="170" key="#JavaScript" timestamp="1583404533919">
-      <screen x="1680" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2240" y="170" key="#JavaScript/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1583404533919" />
     <state x="440" y="190" key="#Notifications" timestamp="1583535250471">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -152,14 +188,27 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="417" y="40" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1584181495108" />
-    <state x="341" y="164" key="SettingsEditor" timestamp="1582981360431">
+    <state width="1659" height="295" key="GridCell.Tab.0.bottom" timestamp="1592083510681">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1582981360431" />
-    <state x="2310" y="281" width="659" height="518" key="find.popup" timestamp="1586263665137">
-      <screen x="1680" y="0" width="1920" height="1080" />
+    <state width="1659" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1592083510681" />
+    <state width="1659" height="295" key="GridCell.Tab.0.center" timestamp="1592083510678">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1659" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1592083510678" />
+    <state width="1659" height="295" key="GridCell.Tab.0.left" timestamp="1592083510677">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1659" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1592083510677" />
+    <state width="1659" height="295" key="GridCell.Tab.0.right" timestamp="1592083510679">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1659" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1592083510679" />
+    <state x="551" y="273" width="577" height="504" key="find.popup" timestamp="1592056703323">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="2310" y="281" width="659" height="518" key="find.popup/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1586263665137" />
+    <state x="551" y="273" width="577" height="504" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1592056703323" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1585831406646">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

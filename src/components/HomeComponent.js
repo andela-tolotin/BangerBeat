@@ -4,13 +4,12 @@ import { Link } from "react-router-dom";
 import * as PropTypes from "prop-types";
 import brand, {
   beatCategories,
-  howItWorks,
   topProducers,
   typeBeats,
   supportLinks,
   socialLinks
 } from "../utils/bangerbeats";
-import { Row, Col, Image, Form, Tabs, Tab } from "react-bootstrap";
+import { Row, Col, Image, Form } from "react-bootstrap";
 import logo from "../logo.svg";
 import {
   faChevronRight,
@@ -18,6 +17,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ItemsCarousel from "react-items-carousel";
+
+import { HowItWorks as HowItWorksComponent } from "./home/howitworks";
 
 const Stepper = ({ step }) => {
   return (
@@ -38,14 +39,7 @@ function HowItWorks(props) {
     <div className="how_it_works">
       <div className="processes">
         <div className="heading_big_black_text">How It Works</div>
-        <Tabs defaultActiveKey="for_producers" id="uncontrolled-tab">
-          <Tab eventKey="for_producers" title="Producers">
-            <div className="process">{howItWorks.map(props.callbackfn)}</div>
-          </Tab>
-          <Tab eventKey="for_artists" title="Artists">
-            <div className="process">{howItWorks.map(props.callbackfn)}</div>
-          </Tab>
-        </Tabs>
+        {HowItWorksComponent()}
       </div>
     </div>
   );

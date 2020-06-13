@@ -1,40 +1,4 @@
 {
-  "name": "untitled",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.27",
-    "@fortawesome/free-solid-svg-icons": "^5.12.1",
-    "@fortawesome/react-fontawesome": "^0.1.9",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.1",
-    "@testing-library/user-event": "^7.2.1",
-    "bootstrap": "^4.4.1",
-    "formik": "^2.1.4",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.0.8",
-    "prettier": "^1.19.1",
-    "prop-types": "latest",
-    "react": "^16.13.0",
-    "react-bootstrap": "^1.0.0-beta.17",
-    "react-carousel-slider": "^2.0.13",
-    "react-dom": "^16.13.0",
-    "react-items-carousel": "^2.8.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0",
-    "react-social-login-buttons": "^3.0.0",
-    "react-toastify": "^5.5.0",
-    "yup": "^0.28.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build && echo '/* /index.html  200' | cat >build/_redirects ",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -47,6 +11,34 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.1",
+    "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.5.0",
+    "formik": "^2.1.4",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "prettier": "^1.19.1",
+    "prop-types": "latest",
+    "react": "^16.13.0",
+    "react-bootstrap": "^1.0.1",
+    "react-carousel-slider": "^2.0.13",
+    "react-dom": "^16.13.0",
+    "react-items-carousel": "^2.8.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "react-social-login-buttons": "^3.0.0",
+    "react-toastify": "^5.5.0",
+    "styled-components": "^5.1.1",
+    "yup": "^0.28.3"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -56,5 +48,14 @@
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write"
     ]
-  }
+  },
+  "name": "untitled",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && echo '/* /index.html  200' | cat >build/_redirects ",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "version": "0.1.0"
 }
