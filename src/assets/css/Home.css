@@ -1,8 +1,12 @@
 .music_background {
   background: url("../images/home.png") no-repeat fixed top center;
-  min-height: 650px;
+  height: 650px;
   background-size: cover;
   width: 100%;
+}
+
+.row {
+  min-height: 80px;
 }
 
 .home_wrapper,
