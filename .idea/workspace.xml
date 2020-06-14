@@ -20,20 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c5d5c8c-c0a2-4f95-bf3e-4d991d19686e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/AvenirLTStd-Book.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/AvenirLTStd-Medium.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/AvenirLTStd-Roman.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/browse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/buy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/create.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home/howitworks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home/howitworks.style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomeComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoginComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/howitworks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/howitworks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/howitworks.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/howitworks.style.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +135,7 @@
       <workItem from="1587281645724" duration="1576000" />
       <workItem from="1587979853970" duration="208000" />
       <workItem from="1587980239343" duration="1213000" />
-      <workItem from="1592046899878" duration="12547000" />
+      <workItem from="1592046899878" duration="16474000" />
     </task>
     <servers />
   </component>
