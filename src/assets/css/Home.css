@@ -151,7 +151,7 @@
 }
 
 .top_producers {
-  background: #ffffff;
+  background: #f4f7fc;
   width: 100%;
   min-height: 400px;
 }
@@ -318,6 +318,12 @@ h4.category_name {
 
   .beat_search_form {
     width: 100%;
+  }
+
+  .beat_search_form > input {
+    outline: 0px !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
   }
 
   .processes {

@@ -17,54 +17,52 @@ const NotFound = () => {
 function App() {
   return (
     <Router>
-      <React.Fragment>
-        <Row>
-          <Col>
-            <header className="App-header">
-              <nav>
-                <div className={"companyBrand"}>
-                  <a href="/">
-                    <Image
-                      className="App-logo"
-                      src={logo}
-                      alt={"Banger Beat logo"}
-                      fluid
-                    />
-                  </a>
+      <Row>
+        <Col>
+          <header className="App-header">
+            <nav>
+              <Link to="/" style={{ textDecoration: "none", color: "#ffffff" }}>
+                <div className="companyBrand">
+                  <Image
+                    className="App-logo"
+                    src={logo}
+                    alt="Banger Beat logo"
+                    fluid
+                  />
                   <h3>{brand.brandname}</h3>
                 </div>
-                <ul>
-                  <li>
-                    <Link to="/genres">Genres</Link>
-                  </li>
-                  <li>
-                    <Link to="/beats">Beats</Link>
-                  </li>
-                  <li>
-                    <Link to="/blog">Blog</Link>
-                  </li>
-                  <li>
-                    <Link to="/login" className="login-btn">
-                      LOG IN
-                    </Link>
-                  </li>
-                </ul>
-              </nav>
-            </header>
-          </Col>
-        </Row>
-        <Switch>
-          {routes.map(route => (
-            <Route
-              key={route.index}
-              path={route.path}
-              component={route.component}
-              exact={route.exact}
-            />
-          ))}
-          <Route component={NotFound} />
-        </Switch>
-      </React.Fragment>
+              </Link>
+              <ul>
+                <li>
+                  <Link to="/genres">Genres</Link>
+                </li>
+                <li>
+                  <Link to="/beats">Beats</Link>
+                </li>
+                <li>
+                  <Link to="/blog">Blog</Link>
+                </li>
+                <li>
+                  <Link to="/login" className="login-btn">
+                    LOG IN
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </header>
+        </Col>
+      </Row>
+      <Switch>
+        {routes.map(route => (
+          <Route
+            key={route.index}
+            path={route.path}
+            component={route.component}
+            exact={route.exact}
+          />
+        ))}
+        <Route component={NotFound} />
+      </Switch>
     </Router>
   );
 }

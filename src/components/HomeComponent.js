@@ -163,9 +163,6 @@ const Home = () => {
                   <button className="filled-solid-btn" onClick={listBeat}>
                     Search
                   </button>
-                  <Link to="/sell-beats" className="filled-outline-btn">
-                    Sell Beat
-                  </Link>
                 </div>
               </div>
             </div>

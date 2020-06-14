@@ -20,12 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c5d5c8c-c0a2-4f95-bf3e-4d991d19686e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/home.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/css/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/music_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/music_bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/music_bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/music_bg4.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HomeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomeComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/howitworks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/howitworks.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +140,7 @@
       <workItem from="1587281645724" duration="1576000" />
       <workItem from="1587979853970" duration="208000" />
       <workItem from="1587980239343" duration="1213000" />
-      <workItem from="1592046899878" duration="19394000" />
+      <workItem from="1592046899878" duration="21891000" />
     </task>
     <servers />
   </component>
@@ -196,11 +199,11 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1659" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1592083510679" />
-    <state x="551" y="273" width="577" height="504" key="find.popup" timestamp="1592112772600">
+    <state x="551" y="273" width="577" height="504" key="find.popup" timestamp="1592115130005">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="2310" y="281" width="659" height="518" key="find.popup/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1586263665137" />
-    <state x="551" y="273" width="577" height="504" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1592112772600" />
+    <state x="551" y="273" width="577" height="504" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1592115130005" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1585831406646">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
