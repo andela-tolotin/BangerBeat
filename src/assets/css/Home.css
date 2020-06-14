@@ -1,6 +1,6 @@
 .music_background {
-  background: url("../images/music_bg4.jpg") no-repeat fixed top center;
-  min-height: 550px;
+  background: url("../images/home.png") no-repeat fixed top center;
+  min-height: 650px;
   background-size: cover;
   width: 100%;
 }
@@ -16,7 +16,7 @@
 
 .home_wrapper {
   min-height: 500px;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 

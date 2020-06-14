@@ -23,18 +23,17 @@ function App() {
             <header className="App-header">
               <nav>
                 <div className={"companyBrand"}>
-                  <Image
-                    className="App-logo"
-                    src={logo}
-                    alt={"Banger Beat logo"}
-                    fluid
-                  />
+                  <a href="/">
+                    <Image
+                      className="App-logo"
+                      src={logo}
+                      alt={"Banger Beat logo"}
+                      fluid
+                    />
+                  </a>
                   <h3>{brand.brandname}</h3>
                 </div>
                 <ul>
-                  <li>
-                    <Link to="/">Home</Link>
-                  </li>
                   <li>
                     <Link to="/genres">Genres</Link>
                   </li>
