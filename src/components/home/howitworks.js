@@ -6,7 +6,7 @@ import buyLogo from "../../../src/assets/images/buy.png";
 import createLogo from "../../../src/assets/images/create.png";
 import browseLogo from "../../../src/assets/images/browse.png";
 
-export const HowItWorks = props => {
+export const HowItWorks = () => {
   return (
     <StyledCardGroup>
       <Card className="p-3">

@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Avenir", sans-serif;
+  font-family: "Avenir Roman", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -32,4 +32,13 @@ h5,
 h6 {
   font-family: "Avenir", sans-serif;
   font-weight: bolder;
+}
+
+/*1rem = 16px*/
+h1 {
+  font-size: 2.63rem;
+}
+
+h5 {
+  font-size: 1.2rem;
 }

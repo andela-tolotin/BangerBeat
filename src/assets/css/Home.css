@@ -30,7 +30,6 @@
   padding: 20px 0;
   color: white;
   font-weight: 700;
-  font-size: 48px;
   line-height: 60px;
   text-align: left;
   -webkit-font-smoothing: antialiased;
@@ -136,7 +135,7 @@
 .heading_big_black_text {
   color: white;
   font-weight: 600;
-  font-size: 52px;
+  font-size: 42px;
   padding: 20px 40px 10px;
   text-align: center;
   -webkit-font-smoothing: antialiased;
@@ -335,7 +334,7 @@ h4.category_name {
   }
   .heading_big_black_text {
     padding: 20px 0 10px;
-    font-size: 48px;
+    font-size: 42px;
   }
 
   .process_wrapper {
@@ -488,10 +487,7 @@ h4.category_name {
     width: 50%;
     justify-content: flex-start;
   }
-  .home_wrapper h1,
-  .producer_wrapper h3 {
-    font-size: 52px;
-  }
+
   .home_wrapper,
   .producer_wrapper {
     width: 90%;

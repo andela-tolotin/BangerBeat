@@ -6,17 +6,12 @@ export const StyledCardGroup = styled(CardColumns)`
 
   && .card {
     border: none;
-    margin-bottom: 2em;
-  }
-
-  && .card:nth-child(1),
-  .card:nth-child(2) {
-    margin-right: 2em;
+    margin: 2em 2em 2em 0;
   }
 
   && .card:nth-child(2) {
     min-height: 35em;
-    margin-bottom: 2em;
+    margin: 0 0;
   }
 
   && .card-title {
