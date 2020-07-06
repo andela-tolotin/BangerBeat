@@ -70,7 +70,7 @@ const SignUp = () => {
       {goNext === true && (
         <Row className="justify-content-md-center">
           <Col sm={4} md={6} lg={4}>
-            <h4 style={{ textAlign: "center", padding: "20px" }}>Sign Up</h4>
+            <h1 style={{ textAlign: "center", padding: "20px" }}>Sign Up</h1>
             <SignUpForm />
             <div className="signup-steps">
               <p style={{ padding: "20px" }}>

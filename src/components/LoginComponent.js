@@ -12,7 +12,7 @@ const Login = () => {
     <React.Fragment>
       <Row className="justify-content-md-center">
         <Col sm={4} md={6} lg={4}>
-          <h4 style={{ textAlign: "center", padding: "20px" }}>Sign In</h4>
+          <h1 style={{ textAlign: "center", padding: "20px" }}>Sign In</h1>
           <LoginInForm />
         </Col>
       </Row>
