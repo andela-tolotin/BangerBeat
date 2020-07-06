@@ -4,20 +4,22 @@ import { Link } from "react-router-dom";
 import * as PropTypes from "prop-types";
 import brand, {
   beatCategories,
-  howItWorks,
   topProducers,
   typeBeats,
   supportLinks,
   socialLinks
 } from "../utils/bangerbeats";
-import { Row, Col, Image, Form, Tabs, Tab } from "react-bootstrap";
+
+import { Row, Col, Image, Form } from "react-bootstrap";
 import logo from "../logo.svg";
 import {
   faChevronRight,
   faChevronLeft
 } from "@fortawesome/free-solid-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ItemsCarousel from "react-items-carousel";
+import { HowItWorks as HowItWorksComponent } from "./home/howitworks";
 
 const Stepper = ({ step }) => {
   return (
@@ -38,14 +40,7 @@ function HowItWorks(props) {
     <div className="how_it_works">
       <div className="processes">
         <div className="heading_big_black_text">How It Works</div>
-        <Tabs defaultActiveKey="for_producers" id="uncontrolled-tab">
-          <Tab eventKey="for_producers" title="Producers">
-            <div className="process">{howItWorks.map(props.callbackfn)}</div>
-          </Tab>
-          <Tab eventKey="for_artists" title="Artists">
-            <div className="process">{howItWorks.map(props.callbackfn)}</div>
-          </Tab>
-        </Tabs>
+        {HowItWorksComponent()}
       </div>
     </div>
   );
@@ -106,6 +101,7 @@ function BeatCategory(props) {
     </div>
   );
 }
+
 BeatCategory.propTypes = { callbackfn: PropTypes.func };
 
 function TypeBeat(props) {
@@ -147,6 +143,7 @@ const Home = () => {
     searchRef.current.value = "";
     setSearch("");
   };
+
   return (
     <React.Fragment>
       <Row>
@@ -160,15 +157,12 @@ const Home = () => {
                   placeholder="What type of beats are you looking for?"
                   ref={searchRef}
                   onChange={captureInput}
-                  size={"lg"}
+                  size="lg"
                 />
                 <div className="action_buttons">
                   <button className="filled-solid-btn" onClick={listBeat}>
                     Search
                   </button>
-                  <Link to="/sell-beats" className="filled-outline-btn">
-                    Sell Beat
-                  </Link>
                 </div>
               </div>
             </div>
@@ -191,7 +185,7 @@ const Home = () => {
                   src={producer.photo}
                   alt={producer.stagename}
                   fluid
-                  roundedCircle
+                  rounded
                 />
                 <Link
                   className="large_heading"
@@ -209,12 +203,7 @@ const Home = () => {
           <BeatCategory
             callbackfn={category => (
               <div className="img_wrapper" key={category.id}>
-                <Image
-                  src={category.photo}
-                  alt={category.name}
-                  fluid
-                  roundedCircle
-                />
+                <Image src={category.photo} alt={category.name} fluid rounded />
                 <Link
                   className="large_heading"
                   to={`/categories/${category.name}`}
@@ -231,7 +220,7 @@ const Home = () => {
           <TypeBeat
             callbackfn={beat => (
               <div className="img_wrapper" key={beat.id}>
-                <Image src={beat.photo} alt={beat.name} fluid roundedCircle />
+                <Image src={beat.photo} alt={beat.name} fluid rounded />
                 <Link className="large_heading" to={`/beats/${beat.name}`}>
                   {beat.name}
                 </Link>
@@ -259,8 +248,8 @@ const Home = () => {
       <Row>
         <Col>
           <footer>
-            <div className={"footer_wrapper"}>
-              <div className={"footer_company_brand"}>
+            <div className="footer_wrapper">
+              <div className="footer_company_brand">
                 <Image
                   className="App-logo"
                   src={logo}
@@ -269,7 +258,7 @@ const Home = () => {
                 />
                 <h3>{brand.brandname}</h3>
               </div>
-              <div className={"support"}>
+              <div className="support">
                 <ul>
                   {supportLinks.map(link => (
                     <li key={link.title}>
@@ -278,7 +267,7 @@ const Home = () => {
                   ))}
                 </ul>
               </div>
-              <div className={"social"}>
+              <div className="social">
                 <ul>
                   {socialLinks.map(link => (
                     <li key={link.title}>
@@ -287,7 +276,7 @@ const Home = () => {
                   ))}
                 </ul>
               </div>
-              <div className={"morelinks"}>
+              <div className="morelinks">
                 <ul>
                   <li>
                     <Link to="/about-us">About us</Link>
@@ -300,7 +289,7 @@ const Home = () => {
               </div>
             </div>
             <hr />
-            <p className={"copyright"}>
+            <p className="copyright">
               BangerBeat &copy; {copyRightYear.getFullYear()}
             </p>
           </footer>

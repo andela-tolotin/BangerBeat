@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Button, Form } from "react-bootstrap";
+import { Row, Col, Form } from "react-bootstrap";
 import {
   FacebookLoginButton,
   GoogleLoginButton
