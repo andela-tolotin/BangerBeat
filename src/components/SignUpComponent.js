@@ -73,7 +73,7 @@ const SignUp = () => {
             <h4 style={{ textAlign: "center", padding: "20px" }}>Sign Up</h4>
             <SignUpForm />
             <div className="signup-steps">
-              <p>
+              <p style={{ padding: "20px" }}>
                 <FacebookLoginButton onClick={() => alert("Hello")} />
                 <GoogleLoginButton onClick={() => alert("Hello")} />
               </p>
