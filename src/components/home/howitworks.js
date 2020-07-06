@@ -9,7 +9,7 @@ import browseLogo from "../../../src/assets/images/browse.png";
 export const HowItWorks = () => {
   return (
     <StyledCardGroup>
-      <Card className="p-3">
+      <Card>
         <Card.Img variant="top" src={browseLogo} />
         <Card.Body>
           <Card.Title>Browse</Card.Title>
@@ -21,7 +21,7 @@ export const HowItWorks = () => {
           </Card.Text>
         </Card.Body>
       </Card>
-      <Card className="p-3">
+      <Card>
         <Card.Img variant="top" src={buyLogo} />
         <Card.Body>
           <Card.Title>Buy</Card.Title>
@@ -32,7 +32,7 @@ export const HowItWorks = () => {
           </Card.Text>
         </Card.Body>
       </Card>
-      <Card className="p-3">
+      <Card>
         <Card.Img variant="top" src={createLogo} />
         <Card.Body>
           <Card.Title>Create</Card.Title>
